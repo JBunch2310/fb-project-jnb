@@ -19,10 +19,30 @@ const db = getFirestore();
 // create a collection called "restaurants"
 
 // add each restaurant
-db.collection('restaurants').add(restaurants[1])
-.then(doc => {
-    console.log('Added restaurants', doc.id);
+// db.collection('restaurants').add(restaurants[2])
+// .then(doc => {
+//     console.log('Added restaurants', doc.id);
+// })
+// .catch(err => {
+//     console.error(err);
+// });
+
+// read one document
+// db.collection('restaurants').doc('UwFAbLPXVhGFlzjz7rVF').get()
+// .then(doc => {
+//     console.log(doc.id, '=>', doc.data());
+// })
+// .catch(err => console.error(err));
+
+// get all documents
+db.collection('restaurants').get()
+.then(snapshot => {
+    snapshot.forEach(doc => {
+        console.log(doc.id, '=>', doc.data());
+    })
 })
 .catch(err => {
     console.error(err);
-})
+});
+
+// find a document
