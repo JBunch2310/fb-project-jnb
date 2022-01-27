@@ -1,0 +1,23 @@
+{
+  "name": "fb-practice-jnb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JBunch2310/fb-project-jnb.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JBunch2310/fb-project-jnb/issues"
+  },
+  "homepage": "https://github.com/JBunch2310/fb-project-jnb#readme",
+  "dependencies": {
+    "firebase-admin": "^10.0.2"
+  }
+}
