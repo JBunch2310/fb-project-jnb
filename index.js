@@ -16,23 +16,23 @@ initializeApp({
 // connect to Firestore
 const db = getFirestore();
 
-// create a collection called "restaurants"
+// create a collection called "restReference"
 
 // add each restaurant
-// db.collection('restaurants').add(restaurants[2])
-// .then(doc => {
-//     console.log('Added restaurants', doc.id);
-// })
-// .catch(err => {
-//     console.error(err);
-// });
+db.collection('restaurants').add(restaurants[3])
+.then(doc => {
+    console.log('Added restaurants', doc.id);
+})
+.catch(err => {
+    console.error(err);
+});
 
 // read one document
-// db.collection('restaurants').doc('UwFAbLPXVhGFlzjz7rVF').get()
-// .then(doc => {
-//     console.log(doc.id, '=>', doc.data());
-// })
-// .catch(err => console.error(err));
+db.collection('restaurants').doc('UwFAbLPXVhGFlzjz7rVF').get()
+.then(doc => {
+    console.log(doc.id, '=>', doc.data());
+})
+.catch(err => console.error(err));
 
 // get all documents
 db.collection('restaurants').get()
@@ -46,3 +46,4 @@ db.collection('restaurants').get()
 });
 
 // find a document
+db.collection('restaurants')
