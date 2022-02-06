@@ -19,7 +19,7 @@ const db = getFirestore();
 // create a collection called "restReference"
 
 // add each restaurant
-db.collection('restaurants').add(restaurants[3])
+db.collection('restaurants').add(restaurants[0]
 .then(doc => {
     console.log('Added restaurants', doc.id);
 })
